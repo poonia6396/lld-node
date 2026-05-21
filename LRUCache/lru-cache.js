@@ -55,6 +55,23 @@ class LRUCache {
         this.#map.set(key, node);
     }
 
+    toArray() {
+        const result = [];
+
+        let node = this.#dll_head.next;
+
+        while(node != this.#dll_tail) {
+            result.push({
+                key: node.key,
+                val: node.val
+            })
+
+            node = node.next;
+        }
+
+        return result;
+    }
+
     #addToFront(node){
         const tmp = this.#dll_head.next;
         this.#dll_head.next = node;
@@ -77,3 +94,5 @@ class LRUCache {
     }
 
 }
+
+module.exports = LRUCache;
