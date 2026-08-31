@@ -1,0 +1,12 @@
+{
+  "name": "paralleltransform",
+  "version": "1.0.0",
+  "description": "Assignment: Parallel Data Transformation with Worker Threads\r Scenario: You're building a batch job that transforms exported CRM records (think: normalizing 100,000 Salesforce contact records — field mapping, phone number formatting, dedup key generation) before writing them to your integration layer. The transformation is CPU-bound enough that doing it on the main thread blocks the event loop and stalls incoming API requests.\r Build a module that:",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
